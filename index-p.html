@@ -331,7 +331,7 @@
         .sec h2 {
             font-size: 3.5em;
             color: #fff;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
         }
         
         .sec p {
@@ -365,11 +365,11 @@
             z-index: 5;
         }
         
-        #footer {
+        footer {
             color: var(--txt);
             text-align: center;
-            margin-bottom: 2px;
-            position: absolute;
+            margin-bottom: 0px;
+            position: relative;
             z-index: 10;
         }
         /*
@@ -390,16 +390,17 @@
         
         h4 {
             color: var(--txt);
-            text-decoration: dashed;
+            text-decoration: none;
         }
         
-        scale {
+        #scale {
             color: var(--txt);
+            text-decoration: none;
         }
         
-        #scale:hover {
-            transform: scaleY(-1);
-        }
+        #scale:hover {}
+        
+        a:hover {}
     </STYLE>
     </header>
 
@@ -447,12 +448,11 @@
                         <br><br> On vous propose donc 3 manières de soutenir l'asso, venir lors de nos évenements, acheter nos invendu, nos créations électronique et nous solliciter pour un projet. </p>
                     <p> <br><br>L'équipe vous remercie de vous êtres interressé à nous.</p>
                     <br>
-                    <p>On se retrouve le samedi 18 septembre au Parc de la Gaudinière pour une édition spécial DUB avec RDH sound system et Miniman<br><br> </a>
-                    </p>
+                    <p>On se retrouve le samedi 18 septembre au Parc de la Gaudinière pour une édition spécial DUB avec RDH sound system et Miniman </p>
 
     </div>
     <footer>
-        <div id="footer">
+        <div>
             <p>Site develloppé par l'asso. Nos autres projets<a href="http://www.github.com/berru-g" class="scale"> Github ici. </p>
         </div>
     </footer>
@@ -476,7 +476,7 @@
             stars.style.left = value * 2 + 'px';
             sat.style.top = value * -1.5 + 'px';
             sat.style.left = value * -5 + 'px';
-            btn.style.marginTop = value * 1.5 + 'px'; /*resoudre le span qui se déloge de son x!*/
+            btn.style.marginTop = value * 1.5 + 'px'; 
             mont.style.top = value * +.34 + 'px';
             cosmos.style.top = value * .25 + 'px';
             header.style.top = value * .5 + 'px';
