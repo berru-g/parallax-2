@@ -7,7 +7,7 @@
     <div class="barre-menu">
         <!-- <a href="github.com/berru-g" class="logo">Berru</a>-->
         <a id="logo" href="src-img\DOSSIER-PRESS-22.pdf">
-            <img width="15%" height="15%" src="src-img\LOGO BLAZE.png" title="Dossier de presse 2022"></a>
+            <img width="12%" height="12%" src="src-img\LOGO BLAZE.png" title="Dossier de presse 2022"></a>
 
         <nav class="dropdownmenu">
             <ul>
@@ -62,7 +62,7 @@
             display: blocks;
             justify-content: space-around;
             align-items: center;
-            z-index: 100;
+            z-index: 10;
         }
         
         .dropdownmenu {
@@ -143,6 +143,7 @@
             position: absolute;
             top: 35px;
             visibility: hidden;
+            text-align: center;
             z-index: 1;
         }
         
@@ -169,8 +170,6 @@
         /*------------------------MENU---2-----------------------------------------------------------*/
         
         #btn {
-            background-image: image("src-img\LUNE.png");
-            /*
             text-decoration: none;
             display: inline-block;
             padding: 8px 30px;
@@ -181,7 +180,7 @@
             letter-spacing: 2px;
             border-radius: 40px;
             transform: translatey(100px);
-             */
+            z-index: 3;
         }
         
         #btn:hover {
@@ -198,7 +197,7 @@
         }
         
         .shooting {
-            z-index: 102;
+            z-index: 100;
             position: relative;
             top: 30%;
             left: 30%;
@@ -293,7 +292,7 @@
             left: 0;
             width: 100%;
             height: 100px;
-            z-index: 10;
+            /*z-index: 10;*/
         }
         
         section img {
@@ -326,12 +325,13 @@
             position: relative;
             padding: 100px;
             background: var(--primary);
+            z-index: 6;
         }
         
         .sec h2 {
             font-size: 3.5em;
             color: #fff;
-            margin-bottom: 10px;
+            margin-bottom: 4px;
         }
         
         .sec p {
@@ -360,6 +360,15 @@
             rotate: 55°;
             opacity: 80%;
         }
+        
+        #forest {
+            z-index: 5;
+        }
+        
+        #footer {
+            color: var(--txt);
+            text-align: center;
+        }
         /*
                 .iss {
                     z-index: 100;
@@ -375,6 +384,19 @@
                         right: 1400px;
                     }
                 }*/
+        
+        h4 {
+            color: var(--txt);
+        }
+        
+        #scale {
+            color: var(--txt);
+            text-decoration: none;
+        }
+        
+        #scale:hover {
+            transform: scaleY(-1);
+        }
     </STYLE>
     </header>
 
@@ -394,7 +416,7 @@
         <img src="src-img\Stars.png" id="sat">
         <img src="src-img\Stars.png" id="stars">
         <img src="src-img\cosmos.png" id="cosmos">
-        <a href="#" id="btn" src="src-img\LUNE.png"></a>
+        <a href="#" id="btn">Espace Trock</a>
         <img src="src-img\mountain3.png" id="mont" position:absolute>
         <img src="src-img\foret.png" id="forest" position:absolute>
     </Section>
@@ -402,23 +424,35 @@
 
     <div class="sec">
         <h2>Bienvenue à l'atelier</h2>
-        <p>Berru c'est quoi? C'est une association loi 1901 à l'initiative des évenement <strong>OpenAir "lesflaneries" à Nantes</strong>, au Parc de la Gaudinière depuis 2018.
-            <br><br>Ce site vous permet de rester informé des prochaines dates de DJ Set au Parc. Mais aussi de découvrir l'univers de l'asso.
-            <br><br> Au dela d'organiser des concert, dj'set dans des Parcs nantais, on s'éclate à créer toute sorte de chose, comme du mapping vidéo ou "projection", on programme des petits instruments C++ au protocole midi pour jouer sur Ableton, Arena
-            ou Arturia.
-            <br><br> Nos instruments sont mis en vente ici, il s'agit de clavier maitre USB-Midi et boite à son électro 100% Analogique, ou suivant l'inspiration, un mélange des deux.
-            <br><br> Nous mettons également à disposition tout nos
-            <strong>invendu</strong> de la saison, à savoir toute les boisson soft et cidre, Qu'il nous reste de nos évenements. Nous les vendons à -20%, cela permet à l'asso éviter des pertes inutiles. Dans ce même context, nous recyclons ...nanan si
-            un meuble vous a plus lors d'un event, nous pouvons soit vous le donner si nous n'en n'avons plus l'utilité ou vous le prêter pour une occasion. "voir espace trock"
-            <br><br><strong>Nous acceptons la CB et Paypal en moyen de paiment et certaine crypto, dont Bitcoin, Ethereum, XRP, Tether USD et Unisap.</strong> <br><br> On vous propose donc 3 manières de soutenir l'asso, venir lors de nos évenements, acheter
-            nos invendu, nos créations électronique et nous solliciter pour un projet. </p>
-        <p> <br><br>L'équipe vous remercie de vous êtres interressé à nous.</p>
-        <p>Si ce site vous plait il à été dévelloppé par nos petites mains.<br><br> Nos autres projets<a href="http://www.github.com/berru-g"> Github ici. </a></p>
+        <p>Berru c'est quoi? C'est une association loi 1901 à l'initiative des évenement Open Air "<a href="#" id="scale">les flaneries</a>" à Nantes, au Parc de la Gaudinière depuis 2018.<br><br>
+            <h4>Open Air</h4>
+            <p>Ce site vous permet de rester informé des prochaines dates de DJ Set au Parc. Mais aussi de découvrir l'univers de l'asso.</p>
+
+            <br><br>
+            <h4>DIY</h4>
+            <p> Au dela d'organiser des concert, dj'set dans des Parcs nantais, on s'éclate à créer toute sorte de chose, comme du mapping vidéo ou "projection", on programme des petits instruments en C++ au protocole midi pour jouer sur Ableton, Arena ou
+                Arturia.
+                <p>Nos instruments sont mis en vente ici, il s'agit de clavier maitre USB-Midi et boite à son électro 100% Analogique, ou suivant l'inspiration, un mélange des deux.
+
+                    <br><br>
+                    <h4>Recyclage</h4>
+                    <p>Nous mettons également à disposition tout nos
+                        <strong>invendu</strong> de la saison, à savoir toute les boisson soft et cidre, Qu'il nous reste de nos évenements. Nous les vendons à -20%, cela permet à l'asso éviter des pertes inutiles. Dans ce même context, nous recyclons
+                        ...nanan si un meuble vous a plus lors d'un event, nous pouvons soit vous le donner si nous n'en n'avons plus l'utilité ou vous le prêter pour une occasion. "voir espace trock"
+                        <br><br>
+                        <h4>Moyen de paiment</h4>
+                        <p>Nous acceptons la CB, Paypal et certaine crypto, dont Bitcoin, Ethereum, XRP, Tether USD et Unisap.
+                            <br><br> On vous propose donc 3 manières de soutenir l'asso, venir lors de nos évenements, acheter nos invendu, nos créations électronique et nous solliciter pour un projet. </p>
+                        <p> <br><br>L'équipe vous remercie de vous êtres interressé à nous.</p>
+                        <p>Si ce site vous plait il à été dévelloppé par nos petites mains.<br><br> </a>
+                        </p>
 
     </div>
 
     <footer>
-        <p>......................</p>
+        <div id="footer">
+            <p>Site develloppé par l'asso. Nos autres projets<a href="http://www.github.com/berru-g" id="scale"> Github ici. </p>
+        </div>
     </footer>
 
     <script>
