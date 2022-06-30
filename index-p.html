@@ -69,7 +69,7 @@
             position: fixed;
             right: 20px;
             top: 40px;
-            border-radius: 20px;
+            border-radius: 40px;
         }
         /* ----------------MENU-------1-------------------------------------------
 
@@ -167,6 +167,24 @@
             background-color: transparent;
         }
         /*------------------------MENU---2-----------------------------------------------------------*/
+        
+        #btn {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 30px;
+            background: rgba(255, 255, 255, 0.46);
+            color: var(--txt);
+            font-size: 1.2em;
+            font-weight: 500;
+            letter-spacing: 2px;
+            border-radius: 40px;
+            transform: translatey(100px);
+        }
+        
+        #btn:hover {
+            background: rgba(255, 255, 255, 0.964);
+            color: black;
+        }
         
         .star {
             position: absolute;
@@ -332,6 +350,7 @@
         #cosmos {
             opacity: 20%;
             position: fixed;
+            margin-top: -10%;
         }
         
         #stars {
@@ -371,8 +390,8 @@
 
         <img src="src-img\Stars.png" id="sat">
         <img src="src-img\Stars.png" id="stars">
-        <img src="src-img\cosmos.jpg" id="cosmos">
-        <!--<a href="#" id="btn">Explore</a>-->
+        <img src="src-img\cosmos.png" id="cosmos">
+        <a href="#" id="btn">Espace Trock</a>
         <img src="src-img\FONT HTML3.png" id="mont" position:absolute>
         <img src="src-img\foret.png" id="forest" position:absolute>
     </Section>
@@ -381,15 +400,17 @@
     <div class="sec">
         <h2>Bienvenue à l'atelier</h2>
         <p>Berru c'est quoi? C'est une association loi 1901 à l'initiative des évenement <strong>OpenAir "lesflaneries" à Nantes</strong>, au Parc de la Gaudinière depuis 2018.
-            <br><br> Au dela d'organiser des concert, dj'set dans des Parcs nantais, on s'éclate à créer toute sorte de chose, comme du mapping vidéo ou "projection", on programme des petits instruments au protocole midi pour jouer sur Ableton, Arena
+            <br><br>Ce site vous permet de rester informé des prochaines dates de DJ Set au Parc. Mais aussi de découvrir l'univers de l'asso.
+            <br><br> Au dela d'organiser des concert, dj'set dans des Parcs nantais, on s'éclate à créer toute sorte de chose, comme du mapping vidéo ou "projection", on programme des petits instruments C++ au protocole midi pour jouer sur Ableton, Arena
             ou Arturia.
             <br><br> Nos instruments sont mis en vente ici, il s'agit de clavier maitre USB-Midi et boite à son électro 100% Analogique, ou suivant l'inspiration, un mélange des deux.
             <br><br> Nous mettons également à disposition tout nos
-            <strong>invendu</strong> de la saison, à savoir toute les boisson soft et cidre, Qu'il nous reste de nos évenements. Nous les vendons à prix coutant pour éviter trop de perte sur le compte associatif.
+            <strong>invendu</strong> de la saison, à savoir toute les boisson soft et cidre, Qu'il nous reste de nos évenements. Nous les vendons à -20%, cela permet à l'asso éviter des pertes inutiles. Dans ce même context, nous recyclons ...nanan si
+            un meuble vous a plus lors d'un event, nous pouvons soit vous le donner si nous n'en n'avons plus l'utilité ou vous le prêter pour une occasion. "voir espace trock"
             <br><br><strong>Nous acceptons la CB et Paypal en moyen de paiment et certaine crypto, dont Bitcoin, Ethereum, XRP, Tether USD et Unisap.</strong> <br><br> On vous propose donc 3 manières de soutenir l'asso, venir lors de nos évenements, acheter
             nos invendu, nos créations électronique et nous solliciter pour un projet. </p>
         <p> <br><br>L'équipe vous remercie de vous êtres interressé à nous.</p>
-        <p>Si ce site vous plait il à été dévelloppé par nos petites mains. Nos autres projets<a href="http://www.github.com/berru-g"> Github ici. </a></p>
+        <p>Si ce site vous plait il à été dévelloppé par nos petites mains.<br><br> Nos autres projets<a href="http://www.github.com/berru-g"> Github ici. </a></p>
 
     </div>
 
@@ -417,7 +438,7 @@
             sat.style.top = value * -1.5 + 'px';
             sat.style.left = value * -5 + 'px';
             btn.style.marginTop = value * 1.5 + 'px';
-            mont.style.top = value * -.12 + 'px';
+            mont.style.top = value * +.34 + 'px';
             cosmos.style.top = value * .25 + 'px';
             header.style.top = value * .5 + 'px';
         })
