@@ -30,7 +30,7 @@
                     margin: 0;
                     padding: 0;
                     box-sizing: border-box;
-                    font-family: cursive;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
                 }
                 
                 body {
@@ -204,7 +204,7 @@
                     font-size: 10vw;
                     text-align: center;
                     line-height: .55em;
-                    font-family: 'Courier New', Courier, monospace, cursive;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
                     opacity: 33%;
                 }
                 
@@ -242,9 +242,14 @@
                     color: #fff;
                 }
                 
-                #cosmos #stars {
-                    opacity: 35%;
-                    position: absolute;
+                #cosmos {
+                    opacity: 20%;
+                    position: fixed;
+                }
+                
+                #stars {
+                    rotate: 55°;
+                    opacity: 80%;
                 }
                 /*
                 .iss {
@@ -277,40 +282,43 @@
     <Section>
         <h2 id="text"><span>Shop</span><br>DIY</h2>
 
-        <img src="src-img\Stars.png" id="sat" rotate:65° opacity:40%>
+        <img src="src-img\Stars.png" id="sat">
         <img src="src-img\Stars.png" id="stars">
-        <img src="src-img\cosmos.png" id="cosmos">
+        <img src="src-img\cosmos.jpg" id="cosmos">
         <!--<a href="#" id="btn">Explore</a>-->
-        <img src="src-img\FONT HTML3.png" id="mont">
-        <img src="src-img\foret.png" id="foret">
+        <img src="src-img\FONT HTML3.png" id="mont" position:absolute>
+        <img src="src-img\foret.png" id="forest" position:absolute>
     </Section>
 
 
     <div class="sec">
         <h2>Bienvenue à l'atelier</h2>
-        <p>Berru c'est une association loi 1901 à l'initiative des évenement OpenAir "lesflaneries" à Nantes, au Parc de la Gaudinière depuis 2018.
+        <p>Berru c'est quoi? C'est une association loi 1901 à l'initiative des évenement <strong>OpenAir "lesflaneries" à Nantes</strong>, au Parc de la Gaudinière depuis 2018.
             <br><br> Au dela d'organiser des concert, dj'set dans des Parcs nantais, on s'éclate à créer toute sorte de chose, comme du mapping vidéo ou "projection", on programme des petits instruments au protocole midi pour jouer sur Ableton, Arena
             ou Arturia.
             <br><br> Nos instruments sont mis en vente ici, il s'agit de clavier maitre USB-Midi et boite à son électro 100% Analogique, ou suivant l'inspiration, un mélange des deux.
-            <br><br> Sed adipiscing diam donec adipiscing. Neque viverra justo nec ultrices. Ipsum suspendisse ultrices gravida dictum fusce ut. Non blandit massa enim nec dui nunc mattis enim. Pellentesque elit eget gravida cum sociis natoque. Massa
-            tincidunt dui ut ornare lectus sit amet. Dapibus ultrices in iaculis nunc sed augue. Turpis massa tincidunt dui ut ornare lectus sit. Consequat nisl vel pretium lectus quam id. Viverra vitae congue eu consequat ac felis donec. Rutrum quisque
-            non tellus orci. Tellus integer feugiat scelerisque varius morbi enim. Lobortis feugiat vivamus at augue. Pellentesque pulvinar pellentesque habitant morbi.
-            <br><br> On vous propose donc 3 manière de soutenir l'asso, venir lors de nos évenements, acheter nos création électronique, </p>
+            <br><br> Nous mettons également à disposition tout nos
+            <strong>invendu</strong> de la saison, à savoir toute les boisson soft et cidre, Qu'il nous reste de nos évenements. Nous les vendons à prix coutant pour éviter trop de perte sur le compte associatif.
+            <br><br><strong>Nous acceptons la CB et Paypal en moyen de paiment et certaine crypto, dont Bitcoin, Ethereum, XRP, Tether USD et Unisap.</strong> <br><br> On vous propose donc 3 manières de soutenir l'asso, venir lors de nos évenements, acheter
+            nos invendu, nos créations électronique et nous solliciter pour un projet. </p>
+        <p> <br><br>L'équipe vous remercie de vous êtres interressé à nous.</p>
+        <p>Si ce site vous plait il à été dévelloppé par nos petites mains. Nos autres projets<a href="http://www.github.com/berru-g"> Github ici. </a></p>
+
     </div>
 
     <footer>
-        <a href="http://www.github.com/berru-g">Artisan indépendant</a>
+        <p>......................</p>
     </footer>
 
     <script>
-        /*script by  Robert Gil Baptista */
+        /*script by  Robert Gil Baptista  à revoir*/
         let text = document.getElementById('text');
         let sat = document.getElementById('sat');
         let stars = document.getElementById('stars');
         let btn = document.getElementById('btn');
         let mont = document.getElementById('mont');
         let cosmos = document.getElementById('cosmos');
-        let foret = document.getElementById('foret');
+        let forest = document.getElementById('forest');
         let header = document.getElementById('header');
 
         window.addEventListener('scroll', function() {
@@ -321,10 +329,9 @@
             stars.style.left = value * 2 + 'px';
             sat.style.top = value * -1.5 + 'px';
             sat.style.left = value * -5 + 'px';
-            btn.style.marginTop = value * 2 + 'px';
-            mont.style.marginTop = value * -.4 + 'px';
-            foret.style.marginTop = value * -.6 + 'px';
-            cosmos.style.marginBottom = value * .8 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            mont.style.top = value * -.50 + 'px';
+            cosmos.style.top = value * .25 + 'px';
             header.style.top = value * .5 + 'px';
         })
     </script>
