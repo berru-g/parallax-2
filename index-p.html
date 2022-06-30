@@ -12,7 +12,7 @@
         <nav class="dropdownmenu">
             <ul>
 
-                <li><a href="https://fr-fr.facebook.com/lesflaneriesnantes">Contacts</a></li>
+                <li><a href="#">Contacts</a></li>
                 <ul id="submenu">
                     <li><a href="#">Programmation</a></li>
                     <li><a href="#">Info Admin</a></li>
@@ -328,7 +328,7 @@
         .sec h2 {
             font-size: 3.5em;
             color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         
         .sec p {
@@ -432,12 +432,12 @@
         window.addEventListener('scroll', function() {
             let value = window.scrollY;
 
-            text.style.top = 15 + value * -.1 + '%';
+            text.style.top = 15 + value * +.2 + '%';
             stars.style.top = value * -1.5 + 'px';
             stars.style.left = value * 2 + 'px';
             sat.style.top = value * -1.5 + 'px';
             sat.style.left = value * -5 + 'px';
-            btn.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px'; /*resoudre le span qui se déloge de son x!*/
             mont.style.top = value * +.34 + 'px';
             cosmos.style.top = value * .25 + 'px';
             header.style.top = value * .5 + 'px';
