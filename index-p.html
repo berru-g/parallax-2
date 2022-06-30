@@ -340,7 +340,7 @@
         }
         
         footer {
-            position: relative;
+            position: fixed;
             padding: 20px 100px;
             background: var(--primary);
         }
@@ -368,6 +368,9 @@
         #footer {
             color: var(--txt);
             text-align: center;
+            margin-bottom: 2px;
+            position: absolute;
+            z-index: 10;
         }
         /*
                 .iss {
@@ -387,11 +390,11 @@
         
         h4 {
             color: var(--txt);
+            text-decoration: dashed;
         }
         
-        #scale {
+        scale {
             color: var(--txt);
-            text-decoration: none;
         }
         
         #scale:hover {
@@ -424,34 +427,33 @@
 
     <div class="sec">
         <h2>Bienvenue à l'atelier</h2>
-        <p>Berru c'est quoi? C'est une association loi 1901 à l'initiative des évenement Open Air "<a href="#" id="scale">les flaneries</a>" à Nantes, au Parc de la Gaudinière depuis 2018.<br><br>
-            <h4>Open Air</h4>
-            <p>Ce site vous permet de rester informé des prochaines dates de DJ Set au Parc. Mais aussi de découvrir l'univers de l'asso.</p>
+        <p>Berru c'est quoi? C'est une association loi 1901 à l'initiative des évenement Open Air "<a href="#" id="scale">les flaneries</a>" à Nantes, au Parc de la Gaudinière depuis 2018.<br><br></p>
+        <h4>Open Air</h4>
+        <p>Ce site vous permet de rester informé des prochaines dates de DJ Set au Parc. Mais aussi de découvrir l'univers de l'asso.</p>
 
-            <br><br>
-            <h4>DIY</h4>
-            <p> Au dela d'organiser des concert, dj'set dans des Parcs nantais, on s'éclate à créer toute sorte de chose, comme du mapping vidéo ou "projection", on programme des petits instruments en C++ au protocole midi pour jouer sur Ableton, Arena ou
-                Arturia.
-                <p>Nos instruments sont mis en vente ici, il s'agit de clavier maitre USB-Midi et boite à son électro 100% Analogique, ou suivant l'inspiration, un mélange des deux.
+        <br><br>
+        <h4>DIY</h4>
+        <p> Au dela d'organiser des concert, dj'set dans des Parcs nantais, on s'éclate à créer toute sorte de chose, comme du mapping vidéo ou "projection", on programme des petits instruments en C++ au protocole midi pour jouer sur Ableton, Arena ou Arturia.
+            <p>Nos instruments sont mis en vente ici, il s'agit de clavier maitre USB-Midi et boite à son électro 100% Analogique, ou suivant l'inspiration, un mélange des deux.
 
+                <br><br>
+                <h4>Recyclage</h4>
+                <p>Nous mettons également à disposition tout nos
+                    <strong>invendu</strong> de la saison, à savoir toute les boisson soft et cidre, qu'il nous reste de nos évenements. Nous les vendons à -20%, cela permet à l'asso d'éviter les pertes inutiles.
+                    <br>Dans ce même context, nous recyclons ...nanan si un meuble vous a plus lors d'un event, nous pouvons soit vous le donner si nous n'en n'avons plus l'utilité ou vous le prêter pour une occasion. "voir espace trock"
                     <br><br>
-                    <h4>Recyclage</h4>
-                    <p>Nous mettons également à disposition tout nos
-                        <strong>invendu</strong> de la saison, à savoir toute les boisson soft et cidre, Qu'il nous reste de nos évenements. Nous les vendons à -20%, cela permet à l'asso éviter des pertes inutiles. Dans ce même context, nous recyclons
-                        ...nanan si un meuble vous a plus lors d'un event, nous pouvons soit vous le donner si nous n'en n'avons plus l'utilité ou vous le prêter pour une occasion. "voir espace trock"
-                        <br><br>
-                        <h4>Moyen de paiment</h4>
-                        <p>Nous acceptons la CB, Paypal et certaine crypto, dont Bitcoin, Ethereum, XRP, Tether USD et Unisap.
-                            <br><br> On vous propose donc 3 manières de soutenir l'asso, venir lors de nos évenements, acheter nos invendu, nos créations électronique et nous solliciter pour un projet. </p>
-                        <p> <br><br>L'équipe vous remercie de vous êtres interressé à nous.</p>
-                        <p>Si ce site vous plait il à été dévelloppé par nos petites mains.<br><br> </a>
-                        </p>
+                    <h4>Moyen de paiment</h4>
+                    <p>Nous acceptons la CB, Paypal et certaine crypto, dont Bitcoin, Ethereum, XRP, Tether USD et Unisap.
+                        <br><br> On vous propose donc 3 manières de soutenir l'asso, venir lors de nos évenements, acheter nos invendu, nos créations électronique et nous solliciter pour un projet. </p>
+                    <p> <br><br>L'équipe vous remercie de vous êtres interressé à nous.</p>
+                    <br>
+                    <p>On se retrouve le samedi 18 septembre au Parc de la Gaudinière pour une édition spécial DUB avec RDH sound system et Miniman<br><br> </a>
+                    </p>
 
     </div>
-
     <footer>
         <div id="footer">
-            <p>Site develloppé par l'asso. Nos autres projets<a href="http://www.github.com/berru-g" id="scale"> Github ici. </p>
+            <p>Site develloppé par l'asso. Nos autres projets<a href="http://www.github.com/berru-g" class="scale"> Github ici. </p>
         </div>
     </footer>
 
@@ -480,5 +482,4 @@
             header.style.top = value * .5 + 'px';
         })
     </script>
-
 </body>
