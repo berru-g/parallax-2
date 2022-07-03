@@ -12,12 +12,13 @@
         <nav class="dropdownmenu">
             <ul>
 
-                <li><a href="#">Contacts</a></li>
-                <ul id="submenu">
-                    <li><a href="#">Programmation</a></li>
-                    <li><a href="#">Info Admin</a></li>
-                    <li><a href="#">espace Partner</a></li>
-                </ul>
+                <li><a href="#">Contacts</a>
+                    <ul id="submenu">
+                        <li><a href="#">Prog</a></li>
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">offre de stage</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Mersh</a>
                     <ul id="submenu">
                         <li><a href="#">Boissons</a></li>
@@ -161,7 +162,7 @@
         }
         
         #submenu a:hover {
-            background: var(--primary);
+            background-color: #ffffff96;
         }
         
         #submenu a {
@@ -171,7 +172,7 @@
         
         #btn {
             text-decoration: none;
-            display: inline-block;
+            display: inline;
             padding: 8px 30px;
             background: rgba(255, 255, 255, 0.46);
             color: var(--txt);
@@ -325,7 +326,7 @@
             position: relative;
             padding: 100px;
             background: var(--primary);
-            z-index: 6;
+            z-index: 15;
         }
         
         .sec h2 {
@@ -346,7 +347,7 @@
         }
         
         footer a {
-            text-decoration: none;
+            text-decoration: #f88989;
             color: #fff;
         }
         
@@ -358,7 +359,7 @@
         
         #stars {
             rotate: 55°;
-            opacity: 80%;
+            opacity: 100%;
         }
         
         #forest {
@@ -390,17 +391,32 @@
         
         h4 {
             color: var(--txt);
+            font-size: 18px;
+        }
+        
+        #scale,
+        a {
+            color: #f3a90a;
             text-decoration: none;
         }
         
-        #scale {
-            color: var(--txt);
-            text-decoration: none;
+        #secret {
+            background-color: transparent;
+            color: #000000;
+            font-size: 10px;
+            position: relative;
+            margin-right: 20px;
+            z-index: 100;
         }
         
-        #scale:hover {}
+        #secret:hover {
+            background-color: #ffffff96;
+            border-radius: 40px;
+        }
         
-        a:hover {}
+        a:hover {
+            opacity: 50%;
+        }
     </STYLE>
     </header>
 
@@ -415,12 +431,12 @@
     </div>-->
 
     <Section>
-        <h2 id="text"><span>Shop</span><br>DIY</h2>
+        <h2 id="text"><span></span><br></h2>
 
         <img src="src-img\Stars.png" id="sat">
-        <img src="src-img\Stars.png" id="stars">
+        <img src="src-img\LUNE.png" id="stars">
         <img src="src-img\cosmos.png" id="cosmos">
-        <a href="#" id="btn">Espace Trock</a>
+        <a href="#" id="btn" title="et offre de stage">Devenir Bénevole</a>
         <img src="src-img\mountain3.png" id="mont" position:absolute>
         <img src="src-img\foret.png" id="forest" position:absolute>
     </Section>
@@ -433,28 +449,35 @@
         <p>Ce site vous permet de rester informé des prochaines dates de DJ Set au Parc. Mais aussi de découvrir l'univers de l'asso.</p>
 
         <br><br>
-        <h4>DIY</h4>
+        <h4>DIY 🎮</h4>
         <p> Au dela d'organiser des concert, dj'set dans des Parcs nantais, on s'éclate à créer toute sorte de chose, comme du mapping vidéo ou "projection", on programme des petits instruments en C++ au protocole midi pour jouer sur Ableton, Arena ou Arturia.
-            <p>Nos instruments sont mis en vente ici, il s'agit de clavier maitre USB-Midi et boite à son électro 100% Analogique, ou suivant l'inspiration, un mélange des deux.
+            <p><a href="#">Nos instruments sont mis en vente ici</a> , il s'agit de clavier maitre USB-Midi et boite à son électro 100% Analogique, ou suivant l'inspiration, un mélange des deux.
 
                 <br><br>
-                <h4>Recyclage</h4>
+                <h4>Recyclage ♻</h4>
                 <p>Nous mettons également à disposition tout nos
-                    <strong>invendu</strong> de la saison, à savoir toute les boisson soft et cidre, qu'il nous reste de nos évenements. Nous les vendons à -20%, cela permet à l'asso d'éviter les pertes inutiles.
-                    <br>Dans ce même context, nous recyclons ...nanan si un meuble vous a plus lors d'un event, nous pouvons soit vous le donner si nous n'en n'avons plus l'utilité ou vous le prêter pour une occasion. "voir espace trock"
-                    <br><br>
-                    <h4>Moyen de paiment</h4>
+                    <strong>invendu</strong> de la saison, à savoir toute les boisson soft et cidre, qu'il nous reste de nos évenements. Nous les vendons à -33 % de leur prix coutant, cela évite les pertes et le gaspillage.
+                    <br>Dans ce même context, nous recyclons ...nanan si un meuble vous a plus lors d'un event, nous pouvons soit vous le donner si nous n'en n'avons plus l'utilité ou vous le prêter pour une occasion. <a href="" #>Dans espace trock.</a>                    <br><br>
+                    <h4>Moyen de paiment 🛒</h4>
                     <p>Nous acceptons la CB, Paypal et certaine crypto, dont Bitcoin, Ethereum, XRP, Tether USD et Unisap.
-                        <br><br> On vous propose donc 3 manières de soutenir l'asso, venir lors de nos évenements, acheter nos invendu, nos créations électronique et nous solliciter pour un projet. </p>
-                    <p> <br><br>L'équipe vous remercie de vous êtres interressé à nous.</p>
-                    <br>
-                    <p>On se retrouve le samedi 18 septembre au Parc de la Gaudinière pour une édition spécial DUB avec RDH sound system et Miniman </p>
+                        <p> <br><br>L'équipe vous remercie de vous êtres interressé à notre univers.</p>
+                        <br>
+                        <div id="scale">
+                            <p>Pour plus d'info génerale, veuillez vous réferer à notre <a href="#">FAQ</a></p>
+                        </div>
 
     </div>
     <footer>
-        <div>
-            <p>Site develloppé par l'asso. Nos autres projets<a href="http://www.github.com/berru-g" class="scale"> Github ici. </p>
+        <div class="scale">
+            <p>Site develloppé par l'asso. Nos autres projets<a href="http://www.github.com/berru-g"> Github ici. </a></p>
+            <a href="#" id="secret" title="">hello you, want to play?</a>
+
         </div>
+        <p id="hour" style='color:var(--text-color); '>Nous sommes </p>
+
+        <p id="jour" style='color:var(--text-color); '></p>
+        <p id="nom" style='color:var(--text-color); '></p>
+
     </footer>
 
     <script>
@@ -473,13 +496,41 @@
 
             text.style.top = 15 + value * +.2 + '%';
             stars.style.top = value * -1.5 + 'px';
-            stars.style.left = value * 2 + 'px';
-            sat.style.top = value * -1.5 + 'px';
-            sat.style.left = value * -5 + 'px';
-            btn.style.marginTop = value * 1.5 + 'px'; 
+            stars.style.left = value * 5 + 'px';
+            sat.style.top = value * -1 + 'px';
+            sat.style.left = value * -1 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
             mont.style.top = value * +.34 + 'px';
             cosmos.style.top = value * .25 + 'px';
             header.style.top = value * .5 + 'px';
         })
+    </script>
+
+    <!--HOUR------vieux script teste de readaptation de cote --------------------------------------------------------------->
+    <script>
+        //			function open()     //pk cette algo ne supporte que 3 var ?
+        function myFunction() {
+            var Bienvenue;
+            var time = new Date().getHours();
+            if (time < 11) {
+                Bienvenue = "c'est encore une belle journée qui commence !";
+            } else if (time < 20) { //SINON -hours inferieur 20H
+                Bienvenue = "cette journée est plutôt cool !";
+                //					document.open.boutton;//putain ça marche mais ça annule myFunction?!!!
+
+            } else {
+                Bienvenue = "la soirée s'annonce douce !"; //AUTREMENT write=""
+
+            }
+
+            document.getElementById("hour").innerHTML = Bienvenue; //Appel de mon id=""
+        }
+    </script>
+    <!--JOUR------------------------------------------------------------------------------------------->
+    <script>
+        var d = new Date();
+        var days = ["dimanche, les autres on l'heure, toi tu as le temps!", "lundi, tendons vers nos objectifs!", "mardi c'est le jour de l'amitié !", "mercredi tous peut arriver !", "jeudi, le week-end s'approche !", "vendredi et demain matin tu est en week-end !", "samedi, on fait quoi aujourd'hui ?"];
+
+        document.getElementById("jour").innerHTML = days[d.getDay()];
     </script>
 </body>
